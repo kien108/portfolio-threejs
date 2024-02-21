@@ -17,13 +17,19 @@ export const textVariant = (delay: number) => {
 }
 
 type Direction = 'left' | 'right' | 'up' | 'down'
+type TypeTransition = 'decay' | 'spring' | 'keyframes' | 'tween' | 'inertia'
 
-export const fadeIn = (direction: Direction, type: string, delay: number, duration: number) => {
+export const fadeIn = (
+  direction: Direction,
+  type: TypeTransition,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
       x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
       y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-      opacity: 0
+      opacity: 0,
     },
     show: {
       x: 0,
@@ -58,7 +64,12 @@ export const zoomIn = (delay: number, duration: number) => {
   }
 }
 
-export const slideIn = (direction: Direction, type: string, delay: number, duration: number) => {
+export const slideIn = (
+  direction: Direction,
+  type: TypeTransition,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
       x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,

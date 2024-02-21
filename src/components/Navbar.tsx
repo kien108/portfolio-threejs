@@ -4,6 +4,8 @@ import { styles } from '@/constants/style.constant'
 import { useToggle } from '@/hooks'
 import { useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/utils/motion.util'
 
 const Navbar = () => {
   const location = useLocation()
@@ -58,10 +60,11 @@ const Navbar = () => {
             onClick={setToggleMenu}
           />
 
-          <div
-            className={`${
-              !toggleMenu ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          <motion.div
+            variants={fadeIn('left', 'tween', 0, 0.5)}
+            // initial='hidden'
+            animate={toggleMenu ? 'show' : 'hidden'}
+            className={`flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex md:hidden flex-col gap-4 justify-end items-start'>
               {navLinks.map((link) => (
@@ -77,7 +80,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>
