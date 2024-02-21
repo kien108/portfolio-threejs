@@ -44,7 +44,7 @@ const ComputerCanvas = () => {
           // only allow to rotate the camera left and right
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          // autoRotate={true}
+          autoRotate={true}
         />
         <Computers />
       </Suspense>
