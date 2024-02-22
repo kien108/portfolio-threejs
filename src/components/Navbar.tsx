@@ -47,7 +47,7 @@ const Navbar = () => {
                 active === link.id ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
             >
-              <Link to={`/#${link.id}`}>{link.title}</Link>
+              <a href={`/#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -62,7 +62,6 @@ const Navbar = () => {
 
           <motion.div
             variants={fadeIn('left', 'tween', 0, 0.5)}
-            // initial='hidden'
             animate={toggleMenu ? 'show' : 'hidden'}
             className={`flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
@@ -74,9 +73,9 @@ const Navbar = () => {
                     active === link.id ? 'text-white' : 'text-secondary'
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                 >
-                  <Link to={`/#${link.id}`} onClick={setToggleMenu}>
+                  <a href={`/#${link.id}`} onClick={setToggleMenu}>
                     {link.title}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
