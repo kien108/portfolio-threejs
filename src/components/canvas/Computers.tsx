@@ -21,8 +21,14 @@ const Computers = () => {
 
   return (
     <mesh>
-      <ambientLight intensity={1} color='white' />
-      <directionalLight intensity={1} color='white' />
+      <ambientLight
+        intensity={1}
+        color='white'
+      />
+      <directionalLight
+        intensity={1}
+        color='white'
+      />
       <hemisphereLight intensity={1} />
       <pointLight intensity={1} />
       <spotLight

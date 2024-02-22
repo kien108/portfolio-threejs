@@ -38,7 +38,10 @@ const ExperienceCard = ({ experience }: IExperienceProps) => {
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
-          <li key={index} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+          <li
+            key={index}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
             {point}
           </li>
         ))}
@@ -49,12 +52,18 @@ const ExperienceCard = ({ experience }: IExperienceProps) => {
 const Experience = () => {
   return (
     <>
-      <SectionTitle subText='What I have done so far' headText='Work Experience.' />
+      <SectionTitle
+        subText='What I have done so far'
+        headText='Work Experience.'
+      />
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline layout='2-columns'>
           {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+            <ExperienceCard
+              key={index}
+              experience={experience}
+            />
           ))}
         </VerticalTimeline>
       </div>

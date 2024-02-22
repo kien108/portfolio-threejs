@@ -35,7 +35,11 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img
+            src={logo}
+            alt='logo'
+            className='w-9 h-9 object-contain'
+          />
           <p className='text-white cursor-pointer text-[18px] font-bold'>Kien108</p>
         </Link>
 
@@ -63,7 +67,9 @@ const Navbar = () => {
           <motion.div
             variants={fadeIn('left', 'tween', 0, 0.5)}
             animate={toggleMenu ? 'show' : 'hidden'}
-            className={`flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={
+              'flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl'
+            }
           >
             <ul className='list-none flex md:hidden flex-col gap-4 justify-end items-start'>
               {navLinks.map((link) => (
@@ -73,7 +79,10 @@ const Navbar = () => {
                     active === link.id ? 'text-white' : 'text-secondary'
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                 >
-                  <a href={`/#${link.id}`} onClick={setToggleMenu}>
+                  <a
+                    href={`/#${link.id}`}
+                    onClick={setToggleMenu}
+                  >
                     {link.title}
                   </a>
                 </li>

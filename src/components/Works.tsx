@@ -41,7 +41,11 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
               onClick={() => window.open(project?.source_code_link, '_blank')}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
+              <img
+                src={github}
+                alt='github'
+                className='w-1/2 h-1/2 object-contain'
+              />
             </div>
           </div>
         </div>
@@ -53,7 +57,10 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {project?.tags.map((tag) => (
-            <p key={tag?.name} className={`text-[14px] ${tag?.color}`}>
+            <p
+              key={tag?.name}
+              className={`text-[14px] ${tag?.color}`}
+            >
               #{tag?.name}
             </p>
           ))}
@@ -65,7 +72,10 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
 const Works = () => {
   return (
     <>
-      <SectionTitle subText='My work' headText='Projects.' />
+      <SectionTitle
+        subText='My work'
+        headText='Projects.'
+      />
 
       <div className='w-full flex'>
         <motion.p
@@ -81,7 +91,11 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, idx) => (
-          <ProjectCard key={idx} project={project} idx={idx} />
+          <ProjectCard
+            key={idx}
+            project={project}
+            idx={idx}
+          />
         ))}
       </div>
     </>
