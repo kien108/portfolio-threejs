@@ -9,11 +9,13 @@ interface IServiceProps {
   service: {
     title: string
     icon: string
+    hightLight: boolean
+    note: string
   }
   idx: number
 }
 const ServiceCard = ({ service, idx }: IServiceProps) => {
-  const { icon, title } = service
+  const { icon, title, hightLight, note } = service
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
@@ -26,7 +28,12 @@ const ServiceCard = ({ service, idx }: IServiceProps) => {
             alt='title'
             className='w-16 h-16 object-contain'
           />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <h3
+            className={`text-[20px] font-bold text-center ${hightLight ? 'text-purple' : 'text-white'}`}
+          >
+            {title}
+          </h3>
+          <span className='text-secondary text-[14px] text-center block -mt-4'>{`( ${note} )`}</span>
         </div>
       </motion.div>
     </Tilt>
@@ -45,10 +52,10 @@ const About = () => {
         variants={fadeIn('up', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] '
       >
-        I'm a full-stack developer with a passion for building beautiful and functional user
+        I'm a junior front-end developer with a passion for building beautiful and functional user
         interfaces. I have a strong foundation in web development and I'm always looking to learn
         new technologies and improve my skills. I'm a quick learner and I'm always looking for new
-        challenges to tackle. I'm a full-stack developer with a passion
+        challenges to tackle. I'm a front-end developer with a passion
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

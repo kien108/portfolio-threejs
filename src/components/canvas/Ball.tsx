@@ -56,7 +56,7 @@ const BallCanvas = ({ imageUrl }: IProps) => {
         <Ball imageUrl={imageUrl} />
       </Suspense>
 
-      <Preload all />
+      {/* <Preload all /> */}
     </Canvas>
   )
 }

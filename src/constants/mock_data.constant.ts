@@ -13,16 +13,22 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
-  threejs
+  threejs,
+  bvLogo,
+  hcmuteLogo,
+  nextjs,
+  antd,
+  mui,
+  express,
+  nestjs,
+  pg,
+  brainwave,
+  trello,
+  movie
 } from '../assets'
 
 export const navLinks = [
@@ -43,31 +49,39 @@ export const navLinks = [
 const services = [
   {
     title: 'Web Developer',
-    icon: web
+    icon: web,
+    hightLight: false,
+    note: 'Got it !'
   },
   {
-    title: 'React Native Developer',
-    icon: mobile
+    title: 'Frontend Developer',
+    icon: mobile,
+    hightLight: true,
+    note: 'My main role 😍'
   },
   {
     title: 'Backend Developer',
-    icon: backend
+    icon: backend,
+    hightLight: false,
+    note: 'Basic'
   },
   {
-    title: 'Content Creator',
-    icon: creator
+    title: 'Fullstack Developer',
+    icon: creator,
+    hightLight: false,
+    note: 'Basic'
   }
 ]
 
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html
-  },
-  {
-    name: 'CSS 3',
-    icon: css
-  },
+  // {
+  //   name: 'HTML 5',
+  //   icon: html,
+  // },
+  // {
+  //   name: 'CSS 3',
+  //   icon: css,
+  // },
   {
     name: 'JavaScript',
     icon: javascript
@@ -81,8 +95,20 @@ const technologies = [
     icon: reactjs
   },
   {
+    name: 'Next JS',
+    icon: nextjs
+  },
+  {
     name: 'Redux Toolkit',
     icon: redux
+  },
+  {
+    name: 'Ant Design',
+    icon: antd
+  },
+  {
+    name: 'Material UI',
+    icon: mui
   },
   {
     name: 'Tailwind CSS',
@@ -93,78 +119,56 @@ const technologies = [
     icon: nodejs
   },
   {
+    name: 'NestJS',
+    icon: nestjs
+  },
+  {
+    name: 'Postgres SQL',
+    icon: pg
+  },
+  {
     name: 'MongoDB',
     icon: mongodb
   },
   {
-    name: 'Three JS',
-    icon: threejs
-  },
-  {
     name: 'git',
     icon: git
-  },
-  {
-    name: 'figma',
-    icon: figma
-  },
-  {
-    name: 'docker',
-    icon: docker
   }
 ]
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Junior React.js Developer',
+    company_name: 'BanVien Corporation',
+    icon: bvLogo,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'July 2022 - Present',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Mentoring intern and fresher developers'
     ]
   },
   {
-    title: 'Web Developer',
+    title: 'Freelancer',
     company_name: 'Shopify',
     icon: shopify,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
+    date: 'May 2022 - June 2022',
+    points: ['Developing and maintaining e-commerce website using shopify']
   },
   {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
+    title: 'Student',
+    company_name: 'HCMUTE',
+    icon: hcmuteLogo,
     iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    date: 'Sep 2019 - Dec 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Major Software Engineering',
+      'GPA: 3.38/4',
+      'Degree: Distinction Bachelor of Engineering'
     ]
   }
 ]
@@ -172,63 +176,63 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
+      'I thought it was impossible to make a website as beautiful as our product, but Kien proved me wrong.',
+    name: 'Minh Nguyen',
+    designation: 'Sofware Engineer',
+    company: 'BanVien Corp',
     image: 'https://randomuser.me/api/portraits/women/4.jpg'
   },
   {
     testimonial:
-      'I\'ve never met a web developer who truly cares about their clients\' success like Rick does.',
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
+      'I\'ve never met a web developer who truly cares about their clients\' success like Kien does.',
+    name: 'Duy Nguyen',
+    designation: 'Project Manager',
+    company: 'BanVien Corp',
     image: 'https://randomuser.me/api/portraits/men/5.jpg'
   },
   {
     testimonial:
-      'After Rick optimized our website, our traffic increased by 50%. We can\'t thank them enough!',
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
+      'Kien always welcomes feedback and is willing to make changes to ensure the final product meets the client\'s needs.',
+    name: 'Khai Truong',
+    designation: 'Sofware Engineer',
+    company: 'BanVien Corp',
     image: 'https://randomuser.me/api/portraits/women/6.jpg'
   }
 ]
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Modern AI Brainwave',
+    description: 'Beautiful website for AI chat app with modern UI and fantastic animations',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'tailwindcss',
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'framer motion',
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: brainwave,
+    source_code_link: 'https://github.com/kien108/brain-wave-mordern-ui',
+    url: 'https://brain-wave-mordern-ui.vercel.app'
   },
   {
-    name: 'Job IT',
+    name: 'Movie Website',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Web application that enables users to search for movies and view details about them. It uses the TMDb API to fetch movie data.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'TMDb-API',
         color: 'green-text-gradient'
       },
       {
@@ -236,29 +240,30 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
+    image: movie,
+    source_code_link: 'https://github.com/kien108/kien108-movie',
+    url: 'https://kmovie108.vercel.app/'
   },
   {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    name: 'Simple DnD Board',
+    description: 'Simple board allow drag&drop column and card',
     tags: [
       {
-        name: 'nextjs',
+        name: 'reactjs',
         color: 'blue-text-gradient'
       },
       {
-        name: 'supabase',
+        name: 'mui',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'expressjs',
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: trello,
+    source_code_link: 'https://github.com/kien108/dnd-trello',
+    url: 'https://dnd-trello-kien108.vercel.app'
   }
 ]
 

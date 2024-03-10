@@ -20,15 +20,23 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
+import nextjs from './tech/nextjs.png'
+import antd from './tech/antd-logo.png'
+import mui from './tech/mui.png'
+import express from './tech/express.jpg'
+import nestjs from './tech/nestjs.svg'
+import pg from './tech/pg.png'
 
-import meta from './company/meta.png'
 import shopify from './company/shopify.png'
-import starbucks from './company/starbucks.png'
-import tesla from './company/tesla.png'
 
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
+import bvLogo from './bv-logo.png'
+import hcmuteLogo from './hcmute-logo.png'
+import brainwave from './brainwave.png'
+import trello from './trello.png'
+import movie from './movie.png'
 
 export {
   logo,
@@ -52,11 +60,19 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
   shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
-  tripguide
+  tripguide,
+  bvLogo,
+  hcmuteLogo,
+  nextjs,
+  antd,
+  mui,
+  express,
+  nestjs,
+  pg,
+  brainwave,
+  trello,
+  movie
 }

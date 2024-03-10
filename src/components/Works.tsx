@@ -16,12 +16,19 @@ interface ProjectCardProps {
     }[]
     image: string
     source_code_link: string
+    url: string
   }
   idx: number
 }
 const ProjectCard = ({ project, idx }: ProjectCardProps) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', idx * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn('up', 'spring', idx * 0.5, 0.75)}
+      onClick={() => {
+        window.open(project?.url, '_blank')
+        console.log('ckick')
+      }}
+    >
       <Tilt
         options={{
           max: 45,
